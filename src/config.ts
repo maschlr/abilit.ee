@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://abilit.ee", // replace this with your deployed domain
+  author: "Marten Schlüter",
+  profile: "https://github.com/maschlr", 
+  desc: "Freelance (Software) Engineering & Development, Consulting and more",
+  title: "abilit.ee",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -28,32 +28,44 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: ` ${SITE.title} on Github`,
+    href: "https://github.com/maschlr",
+    linkTitle: `Marten on Github`,
+    active: true,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/marten-schlueter",
+    linkTitle: `Marten on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "Strava",
+    href: "https://www.strava.com/athletes/56097089",
+    linkTitle: `Marten on Mastodon`,
+    active: true,
+  },
+  {
+    name: "Telegram",
+    href: "https://t.me/abilit0x",
+    linkTitle: `${SITE.title} on Telegram`,
+    active: false,
+  },
+  {
+    name: "Mail",
+    href: "mailto:post@abilit.ee",
+    linkTitle: `Send an email to Marten`,
     active: true,
   },
   {
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
-  },
-  {
-    name: "Mail",
-    href: "mailto:yourmail@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
   {
@@ -132,12 +144,6 @@ export const SOCIALS: SocialObjects = [
     name: "Steam",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Steam`,
-    active: false,
-  },
-  {
-    name: "Telegram",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Telegram`,
     active: false,
   },
   {
