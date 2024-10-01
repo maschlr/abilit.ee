@@ -21,30 +21,30 @@ import { SOCIALS } from "@config";
     >
       <h1>About</h1>
       <Hr />
-      <div class="h-32 sm:h-64">
-        <div class="w-fit h-fit float-left overflow-hidden px-10">
-          <Image
-            class="w-32 h-32 sm:w-64 sm:h-64 rounded-full object-cover object-[center_top]"
-            src={headshotImage}
-            alt="Headshot of Marten Schlüter"
-          />
-        </div>
 
-        <p>
-          Hi, my name is Marten Schlüter. Born in Germany, founder in Estonia
-          and now living in Panama and the US, I'm a global citizen and believe
-          in the transforming power of internet and technology. If you'd like
-          the long version, keep on reading.
-        </p>
-        <p>
-          Otherwise, check out my <LinkButton href="https://registry.jsonresume.org/maschlr">CV</LinkButton>
-        </p>
+      <div class="mx-auto w-fit h-fit overflow-hidden px-10">
+        <Image
+          class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover object-[center_top]"
+          src={headshotImage}
+          alt="Headshot of Marten Schlüter"
+        />
       </div>
+
+      <p>
+        Hi, my name is Marten Schlüter. Born in Germany, founder in Estonia and
+        now living in Panama and the US, I'm a global citizen and believe in the
+        transforming power of internet and technology. If you'd like the long
+        version, keep on reading.
+      </p>
+      <p>
+        Otherwise, check out my <LinkButton
+          href="https://registry.jsonresume.org/maschlr">CV</LinkButton
+        >
+      </p>
     </section>
     <Hr />
     <section class="prose pt-6 pb-10">
-      <h2>Career</h2>
-      <h3>Energy Systems Engineering</h3>
+      <h2>Energy Systems Engineering</h2>
       <p>
         In Germany I studied energy systems engineering. I've always been
         passionate about travelling and exploration, so I wrote my thesis in
@@ -78,29 +78,26 @@ import { SOCIALS } from "@config";
       </p>
     </section>
     <section class="prose pb-10">
-      <h3>Software Engineering</h3>
+      <h2>Software Engineering</h2>
       <p>
-        Software Engineering and working with data has always been a passion of mine.
-        I'm a digital native, my first computer was a 286 with DOS. In engineering, programming is a tool for me to solve problems and to create value.
-        I decided to make a career change and started to work as a freelance software engineer.
-        My first gig was working at 
-        <LinkButton
-          href="https://odoo.com"
-          target="_blank">Odoo
-        </LinkButton> 
+        Software Engineering and working with data has always been a passion of
+        mine. I'm a digital native, my first computer was a 286 with DOS. In
+        engineering, programming is a tool for me to solve problems and to
+        create value. I decided to make a career change and started to work as a
+        freelance software engineer. My first gig was working at
+        <LinkButton href="https://odoo.com" target="_blank">Odoo </LinkButton>
         in 2022. Check out some other projects I've worked on in the <LinkButton
           href="/projects">projects</LinkButton
         > section.
       </p>
     </section>
     <section class="prose pb-10">
-      <h3>Hobbies</h3>
+      <h2>Hobbies</h2>
       <p>
-        I'm an avid explorer and traveler. 
-        We all stand on the shoulder of giants and books enable us to learn from the best. 
-        I love to discover new places and
-        cultures. Being and moving in nature is what gives me energy and
-        inspiration. Check out my <LinkButton
+        I'm an avid explorer and traveler. We all stand on the shoulder of
+        giants and books enable us to learn from the best. I love to discover
+        new places and cultures. Being and moving in nature is what gives me
+        energy and inspiration. Check out my <LinkButton
           href={SOCIALS.find(social => social.name === "Strava")
             ?.href as string}
           target="_blank">Strava</LinkButton
