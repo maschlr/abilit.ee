@@ -53,6 +53,7 @@ const { activeNav } = Astro.props;
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
+        <div id="menu-items" class="display-none md:display-block">
         <ul id="menu-items" class="flex flex-col sm:flex sm:flex-row">
           <li>
             <a
@@ -96,6 +97,7 @@ const { activeNav } = Astro.props;
             )
           }
         </ul>
+      </div>
       </nav>
     </div>
   </div>
