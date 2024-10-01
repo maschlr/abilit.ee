@@ -1,0 +1,88 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import LinkButton from "@components/LinkButton.astro";
+---
+
+<Layout title={`Services | ${SITE.title}`}>
+  <Header activeNav="services" />
+  <Main pageTitle="Our Services">
+  <div class="prose">
+    <h2>Custom Software Development</h2>
+    <p>
+      We build bespoke software solutions tailored to your needs, from concept
+      to deployment. Our expertise spans from simple integrations to complex
+      applications, ensuring that your business runs smoothly.
+    </p>
+
+    <h2>Voice Message Solutions</h2>
+    <p>
+      Simplify your voice communications with our cutting-edge transcription,
+      translation, and summarization services. Using advanced AI tools like
+      OpenAI’s Whisper and DeepL, we streamline your workflow on platforms like
+      Telegram.
+    </p>
+
+    <h2>Full-Stack Web Development</h2>
+    <p>
+      Our team delivers sleek and responsive web applications. Whether it’s
+      building dynamic frontends using Next.js and TailwindCSS or developing
+      robust backends with FastAPI and PostgreSQL, we craft reliable and
+      scalable solutions.
+    </p>
+
+    <h2>Rapid Prototyping & Market Validation</h2>
+    <p>
+      Bring your ideas to life quickly with our rapid prototyping services. We
+      help you test and validate your digital products, minimizing risk and
+      maximizing success.
+    </p>
+
+    <h2>CI/CD & Automation</h2>
+    <p>
+      We streamline your development process with continuous integration and
+      continuous delivery workflows, ensuring your projects are delivered faster
+      and with fewer errors. Our automation expertise covers everything from
+      testing to deployment.
+    </p>
+
+    <h2>Consulting & Support</h2>
+    <p>
+      Our team offers comprehensive consulting and support services, guiding you
+      through every step of your digital journey. Whether you need assistance
+      with infrastructure, software solutions, or project management, we are
+      here to help.
+    </p>
+
+    <h2>Machine Learning & Data Analysis</h2>
+    <p>
+      Unlock the power of your data with our advanced analytics and machine
+      learning solutions. We help you make informed decisions by turning raw
+      data into actionable insights.
+    </p>
+
+    <h2>Business Software Solutions</h2>
+    <p>
+      We provide expert development, maintenance, and consultation for Odoo’s
+      suite of business applications. Our team ensures seamless implementation,
+      migration, and customization to help businesses of all sizes optimize
+      their operations.
+    </p>
+
+    <h2>Energy Systems Expertise</h2>
+    <p>
+      With deep knowledge in energy systems engineering, we provide specialized
+      consulting services, helping businesses in the energy sector to innovate
+      and optimize their processes.
+    </p>
+
+    <p class="pt-20">
+        Haven't found what you are looking for? <LinkButton target="_blank" href="/">Contact us</LinkButton> and we will find a solution for you.
+    </p>
+</div>
+  </Main>
+  <Footer />
+</Layout>
