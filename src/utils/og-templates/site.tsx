@@ -46,6 +46,7 @@ export default async () => {
               maxHeight: "90%",
               overflow: "hidden",
               textAlign: "center",
+              color: "#EAEDF3",
             }}
           >
             <p style={{ fontSize: 72, fontWeight: "bold" }}>{SITE.title}</p>
