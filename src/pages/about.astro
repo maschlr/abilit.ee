@@ -6,7 +6,7 @@ import Header from "@components/Header.astro";
 import Hr from "@components/Hr.astro";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import headshotImage from "../assets/images/headshot.jpg";
+import headshotImage from "../assets/images/headshot.png";
 import LinkButton from "@components/LinkButton.astro";
 import { SOCIALS } from "@config";
 ---
@@ -22,13 +22,11 @@ import { SOCIALS } from "@config";
       <h1>About</h1>
       <Hr />
 
-      <div class="mx-auto w-fit h-fit overflow-hidden px-10">
-        <Image
-          class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover object-[center_top]"
-          src={headshotImage}
-          alt="Headshot of Marten Schlüter"
-        />
-      </div>
+      <Image
+        class="w-48 h-48 sm:w-64 sm:h-64 mx-auto"
+        src={headshotImage}
+        alt="Headshot of Marten Schlüter"
+      />
 
       <p>
         Hi, my name is Marten Schlüter. Born in Germany, founder in Estonia and
