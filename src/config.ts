@@ -6,7 +6,7 @@ export const SITE: Site = {
   profile: "https://github.com/maschlr",
   desc: "Freelance (Software) Engineering & Development, Consulting and more",
   title: "abilit.ee",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og.png",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
