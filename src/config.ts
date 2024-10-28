@@ -42,7 +42,7 @@ export const SOCIALS: SocialObjects = [
     name: "Strava",
     href: "https://www.strava.com/athletes/56097089",
     linkTitle: `Marten on Mastodon`,
-    active: true,
+    active: false,
   },
   {
     name: "Telegram",
