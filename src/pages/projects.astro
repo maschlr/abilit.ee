@@ -12,7 +12,7 @@ const resumeResponse = await fetch(
   "https://gist.githubusercontent.com/maschlr/dc54abab3dc20c8e15825787d3f4fc82/raw/resume.json"
 );
 const resume = await resumeResponse.json();
-const projects = resume.work as ProjectProps[];
+const projects = [...resume.work, ...resume.projects] as ProjectProps[];
 
 // List of projects to display
 const projectList = projects.filter(project => project.pinned);
