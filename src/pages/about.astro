@@ -8,7 +8,6 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import headshotImage from "../assets/images/headshot.png";
 import LinkButton from "@components/LinkButton.astro";
-import { SOCIALS } from "@config";
 ---
 
 <Layout title={`About | ${SITE.title}`}>
@@ -29,88 +28,80 @@ import { SOCIALS } from "@config";
       />
 
       <p>
-        Hi, my name is Marten Schlüter. Born in Germany, founder of <LinkButton
-          href="https://abilit.ee">abilit.ee</LinkButton
-        > in Estonia and now living between the US and Panama. I see myself as a
-        global citizen and believe in the transforming power of internet and technology.
-      </p>
-      <p>
-        My strength is the ability to rigorously think about technical
-        challenges while at the same time being able to design & implement
-        efficient solutions from top to bottom. My ability to adapt let's me
-        operate and thrive in complex environment with a high level of
-        uncertainty. For an overview of the projects I've worked on throughout
-        my career, check out my <LinkButton
-          href="https://registry.jsonresume.org/maschlr">CV</LinkButton
-        >
-        If you think I'm able to help you and you're interested in working together
-        on a project, you can send me an <LinkButton
-          href="mailto:post@abilit.ee"
-          target="_blank">e-mail</LinkButton
-        >. For those interested in what's written between the lines, I've
-        created this space.
+        I’m Marten Schlüter, a German engineer with over two decades of coding
+        experience and a degree in Energy Systems Engineering. From designing
+        industrial power systems to pioneering software-driven efficiencies,
+        I’ve always been driven by curiosity and a passion for solving complex
+        problems. In 2022, I took a leap of faith, moving to Panama to embrace a
+        life closer to nature and freedom. This journey inspired me to found my
+        software consulting company in Estonia, a hub for innovation and global
+        collaboration. With a focus on data-driven applications, my mission is
+        to empower businesses worldwide by delivering efficient, scalable, and
+        tailored solutions.
       </p>
     </section>
     <Hr />
     <section class="prose pt-6 pb-10">
-      <h2>Energy Systems Engineering</h2>
+      <h2>Why Choose Us?</h2>
       <p>
-        In Germany I studied energy systems engineering. I've always been
-        passionate about travelling and exploration, so I wrote my thesis in
-        <LinkButton
-          href="https://maps.app.goo.gl/ZfdEwVTAT1nrhr329"
-          target="_blank">Piura, Peru.</LinkButton
-        >
-        The topic of my
-        <LinkButton
-          href="https://drive.google.com/file/d/1r_yP8qja3O0zEvQLzIwHM7Ztneg32xOW/view?usp=sharing"
-          target="_blank">thesis</LinkButton
-        >
-        was the design and simulation of an industrial drying process, powered by
-        renewable energy. I did extensive simulations in Python, solving large systems
-        of partial differential equations to simulate the flow of humidity and energy.
-        My knowledge in Python also helped me to visualize the data and results in
-        a meaningful way.
+        At abilit.ee, we blend deep technical expertise with a personal,
+        client-focused approach. We specialize in:
+        <ul>
+          <li>
+            Python Backend Development: Rapid consultation and seamless
+            implementation for complex, data-heavy systems.
+          </li>
+          <li>
+            Odoo Customization: Crafting ERP solutions that adapt to your
+            business needs, not the other way around.
+          </li>
+          <li>
+            LLM Integrations: Leveraging cutting-edge AI to transform your data
+            into actionable insights.
+          </li>
+        </ul>
+      </p>
+      <p>
+        Whether it’s building robust software systems or integrating the latest
+        technologies, I believe in creating solutions that don’t just work but
+        also inspire confidence.
       </p>
 
+      <h2>Our Philosophy</h2>
       <p>
-        After my studies I worked as a project manager in the energy sector in
-        Germany on large infrastructure projects. I have many great memories of
-        great projects and people I worked with. Getting to know applied
-        engineering and project management was a great experience. I learned a
-        lot about project management, team work and leadership.
+        I’ve spent years working on diverse projects, from industrial emergency
+        power systems to data analysis for renewable energy. These experiences
+        taught me the value of efficiency, clarity, and precision. My approach
+        is simple: I listen, understand, and deliver solutions that make a real
+        difference. At the heart of everything I do is a commitment to freedom
+        and independence—values that guide not just my life but also the way I
+        help businesses achieve their goals.
       </p>
 
+      <h2>Who We Work With</h2>
       <p>
-        Nevertheless, I made the decision that this was not the path I wanted to
-        continue on.
+        I collaborate with forward-thinking businesses across industries,
+        including energy, logistics, e-commerce, and AI. Many of my clients are
+        based in the US, and I specialize in understanding the unique challenges
+        they face while offering solutions tailored to their needs.
       </p>
-    </section>
-    <section class="prose pb-10">
-      <h2>Software Engineering</h2>
+
+      <h2>Let’s Build Something Exceptional</h2>
       <p>
-        Software Engineering and working with data has always been a passion of
-        mine. I'm a digital native, my first computer was a 286 with DOS. In
-        engineering, programming is a tool for me to solve problems and to
-        create value. I decided to make a career change and started to work as a
-        freelance software engineer. My first gig was working at
-        <LinkButton href="https://odoo.com" target="_blank">Odoo </LinkButton>
-        in 2022. Check out some other projects I've worked on in the <LinkButton
-          href="/projects">projects</LinkButton
-        > section.
+        I know what it’s like to tackle complex problems, whether it’s designing
+        off-grid solar systems in the tropics or optimizing software to handle
+        millions of transactions. With [Your Business Name], you’re not just
+        hiring a consultant; you’re gaining a dedicated partner who’s as
+        invested in your success as you are. Let’s create something
+        extraordinary together.
       </p>
-    </section>
-    <section class="prose pb-10">
-      <h2>Hobbies</h2>
       <p>
-        I'm an avid explorer and traveler. We all stand on the shoulder of
-        giants and books enable us to learn from the best. I love to discover
-        new places and cultures. Being and moving in nature is what gives me
-        energy and inspiration. Check out my <LinkButton
-          href={SOCIALS.find(social => social.name === "Strava")
-            ?.href as string}
-          target="_blank">Strava</LinkButton
-        > profile to see some of my activities.
+        Feel free to <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent font-extrabold"
+          href="mailto:post@abilit.ee"
+          target="_blank">reach out</LinkButton
+        > — I’d love to hear about your challenges and explore how we can solve them,
+        one innovative solution at a time.
       </p>
     </section>
   </main>
