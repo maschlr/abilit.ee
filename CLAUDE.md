@@ -161,14 +161,16 @@ Astro uses file-based routing:
 ## Development Commands
 
 ```bash
-npm run dev          # Start dev server at localhost:4321
-npm run build        # Build for production (runs type check + build)
-npm run preview      # Preview production build locally
-npm run format       # Format code with Prettier
-npm run format:check # Check formatting without changes
-npm run lint         # Lint with ESLint
-npm run sync         # Generate TypeScript types for Astro modules
+pnpm dev          # Start dev server at localhost:4321
+pnpm build        # Build for production (runs type check + build)
+pnpm preview      # Preview production build locally
+pnpm format       # Format code with Prettier
+pnpm format:check # Check formatting without changes
+pnpm lint         # Lint with ESLint
+pnpm sync         # Generate TypeScript types for Astro modules
 ```
+
+> Note: pnpm allows running scripts without the `run` keyword (e.g., `pnpm dev` instead of `pnpm run dev`).
 
 ## Company Context
 
