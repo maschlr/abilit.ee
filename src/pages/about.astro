@@ -5,8 +5,6 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Hr from "@components/Hr.astro";
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import headshotImage from "../assets/images/headshot.png";
 import LinkButton from "@components/LinkButton.astro";
 ---
 
@@ -21,78 +19,79 @@ import LinkButton from "@components/LinkButton.astro";
       <h1>About</h1>
       <Hr />
 
-      <Image
-        class="w-48 h-48 sm:w-64 sm:h-64 mx-auto"
-        src={headshotImage}
-        alt="Headshot of Marten Schlüter"
-      />
-
       <p>
-        I'm Marten Schlüter, a German engineer with over two decades of coding
-        experience and a degree in Energy Systems Engineering. I specialize in
-        building efficient, data-driven software solutions for businesses
-        worldwide. From industrial power systems to modern web applications, I
-        bring technical expertise and a pragmatic approach to solving complex
-        engineering challenges.
+        We're a software engineering consultancy that ships. Based in Estonia,
+        we work with startups and growing companies worldwide who need
+        production-ready solutions fast. No endless planning cycles. No
+        over-engineered architectures that collapse under real-world use. Just
+        pragmatic engineering and solid architecture that scales from day one.
       </p>
     </section>
     <Hr />
     <section class="prose pt-6 pb-10">
-      <h2>Why Choose Us?</h2>
+      <h2>Why Work With Us?</h2>
       <p>
-        At abilit.ee, we blend deep technical expertise with a personal,
-        client-focused approach. We specialize in:
-        <ul>
-          <li>
-            Python Backend Development: Rapid consultation and seamless
-            implementation for complex, data-heavy systems.
-          </li>
-          <li>
-            Odoo Customization: Crafting ERP solutions that adapt to your
-            business needs, not the other way around.
-          </li>
-          <li>
-            LLM Integrations: Leveraging cutting-edge AI to transform your data
-            into actionable insights.
-          </li>
-        </ul>
+        We focus on outcomes, not credentials. When you work with us, you get:
       </p>
-      <p>
-        Whether it’s building robust software systems or integrating the latest
-        technologies, I believe in creating solutions that don’t just work but
-        also inspire confidence.
-      </p>
+      <ul>
+        <li>
+          <strong>Business value first</strong> - We build what moves your
+          business forward, not what looks impressive in a tech blog. Every
+          feature needs to justify its existence.
+        </li>
+        <li>
+          <strong>True ownership</strong> - One team accountable for your
+          entire stack. No finger-pointing between frontend, backend, and
+          infrastructure specialists.
+        </li>
+        <li>
+          <strong>High agency</strong> - We solve problems proactively. If
+          something's blocking progress, we find a way through instead of
+          waiting for permission.
+        </li>
+        <li>
+          <strong>Available when it counts</strong> - Shipping on Friday?
+          Launch day? We're there. Responsibility means being present when
+          stakes are high.
+        </li>
+      </ul>
 
       <h2>Our Philosophy</h2>
       <p>
-        Years of working on diverse projects—from industrial emergency power
-        systems to data analysis for renewable energy—have taught me the value
-        of efficiency, clarity, and precision. My approach is straightforward:
-        listen, understand, and deliver solutions that make a real difference.
+        Speed and quality aren't opposites. You can move fast without creating
+        technical debt that slows you down later. We build clean architectures
+        that won't need complete rewrites when you hit 10k users. We ship
+        production-ready code from day one—proper error handling, monitoring,
+        and security built in, not bolted on later.
+      </p>
+      <p>
+        This isn't about perfection. It's about pragmatic engineering: making
+        the right tradeoffs, choosing appropriate tools, and building
+        foundations that let you scale confidently when growth happens.
       </p>
 
       <h2>Who We Work With</h2>
       <p>
-        I collaborate with forward-thinking businesses across industries,
-        including energy, logistics, e-commerce, and AI. Many of my clients are
-        based in the US, and I specialize in understanding the unique challenges
-        they face while offering solutions tailored to their needs.
+        We work with funded startups ready to build their MVP and growing
+        companies launching new products. Our clients need dedicated technical
+        execution—not consulting reports or month-long discovery phases. They
+        have clear goals and tight timelines, and they need a technical partner
+        who can move at their speed.
       </p>
 
-      <h2>Let's Build Something Exceptional</h2>
+      <h2>Ready to Start?</h2>
       <p>
-        Whether it's optimizing software to handle millions of transactions or
-        designing specialized systems for your industry, abilit.ee brings the
-        technical expertise and dedication your project needs. You're not just
-        hiring a consultant; you're gaining a partner invested in your success.
+        If you have a clear goal and need a technical partner who can execute
+        fast without compromising quality, let's talk. No sales pitches, no
+        endless discovery phases. Just a straightforward conversation about your
+        project and how we can help you ship.
       </p>
       <p>
-        Feel free to <LinkButton
+        <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent font-extrabold"
           href="mailto:post@abilit.ee"
-          target="_blank">reach out</LinkButton
-        > — I'd love to hear about your challenges and explore how we can solve them,
-        one innovative solution at a time.
+          target="_blank">Get in touch</LinkButton
+        > and tell us what you're building.
       </p>
     </section>
     <Hr />
