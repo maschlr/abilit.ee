@@ -10,26 +10,66 @@ import LinkButton from "@components/LinkButton.astro";
   <main id="main-content">
     <section id="hero">
       <h1>Software Engineering That Ships</h1>
+      <p class="text-xl sm:text-2xl text-skin-accent">
+        MVPs, AI agents, and DevOps for startups that need to move fast
+      </p>
 
       <p>
-        I build modern web applications and data systems that solve real
-        problems. From full-stack development with Next.js and TailwindCSS to
-        blockchain integration and serverless backends, I work across the entire
-        stack to deliver solutions that scale.
+        We build production-ready applications and intelligent systems that solve
+        real problems. From full-stack MVPs to custom AI workflows and automated
+        infrastructure, we work across the entire stack to deliver solutions that
+        scale from day one.
       </p>
       <p>
-        Whether you need a Python backend, blockchain integration, or a complete
-        web application—I focus on pragmatic engineering over perfect
-        architecture. Your project moves forward, not sideways.
+        Whether you're launching a new product or scaling an existing one—we
+        focus on pragmatic engineering over perfect architecture. Your project
+        moves forward, not sideways.
       </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">What We Build</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+        <div class="border border-skin-line rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">Full-Stack Development</h3>
+          <p class="text-sm mb-3">Ship your product in weeks, not months</p>
+          <LinkButton
+            className="text-sm underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+            href="/services"
+          >
+            Learn more →
+          </LinkButton>
+        </div>
+        <div class="border border-skin-line rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">AI Integration & Workflows</h3>
+          <p class="text-sm mb-3">
+            Beyond ChatGPT wrappers - AI that actually works
+          </p>
+          <LinkButton
+            className="text-sm underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+            href="/services"
+          >
+            Learn more →
+          </LinkButton>
+        </div>
+        <div class="border border-skin-line rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">DevOps & Infrastructure</h3>
+          <p class="text-sm mb-3">Scale confidently from day one</p>
+          <LinkButton
+            className="text-sm underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+            href="/services"
+          >
+            Learn more →
+          </LinkButton>
+        </div>
+      </div>
+
       <p>
-        <span class="font-bold">Have a project in mind?</span>
+        <span class="font-bold">Ready to start?</span>
         <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
           href="mailto:post@abilit.ee"
           target="_blank"
         >
-          Let's talk
+          Let's build
         </LinkButton>
       </p>
     </section>
